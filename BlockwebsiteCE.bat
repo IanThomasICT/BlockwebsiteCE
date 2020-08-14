@@ -1,0 +1,1 @@
+@py.exe C:\Users\tmith\Python\BlockwebsiteCE.py %*
