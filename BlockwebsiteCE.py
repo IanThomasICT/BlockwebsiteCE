@@ -1,5 +1,7 @@
 #! python3
 
+# This requires the Covenant Eyes account to be using the Screen Accountability software (not the Legacy Internet Accountability software)
+
 import keyboard
 import webbrowser
 import pyautogui as pya
@@ -12,6 +14,9 @@ import time
 import os
 import subprocess
 
+# Insert your Covenant Eyes login information here:
+username = "____"
+password = "____"
 
 def copyurl():
     global url
@@ -36,12 +41,9 @@ def opencovenanteyes():
     global driver
     driver = webdriver.Chrome(options=chrome_options)
 
-    driver.get("https://covenanteyes.com/myaccount/filter/users/Tmithomas98/custom-block-allow-lists") # Open CE filter list page
+    driver.get(f"https://covenanteyes.com/myaccount/filter/users/{username}/custom-block-allow-lists") # Open CE filter list page
 
 def covenanteyeslogin():
-    username = "tmithomas98"
-    password = "mqGstbaEG43MtG"
-
     time.sleep(1)
     user = driver.find_element_by_id("id_sign_in_username")
     user.click()
