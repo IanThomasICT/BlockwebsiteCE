@@ -1,5 +1,5 @@
 # BlockwebsiteCE
-Block website with Covenant Eyes in real-time. Specific for an Internet Filtering/Accountability software called Covenant Eyes.
+Block websites with Covenant Eyes in real-time. Specific for an Internet Filtering/Accountability software called Covenant Eyes.
 
 This Python file runs in the background and blocks the current website that the user is viewing when the execute hotkey is pressed: "alt+`"
 
